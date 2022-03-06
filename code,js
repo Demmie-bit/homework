@@ -1,0 +1,32 @@
+function preload(){
+
+}
+
+function setup(){
+    canvas = createCanvas(640, 480);
+    canvas.position(110,250);
+    video = createCapture(VIDEO);
+    video.hide();
+}
+
+function draw(){
+    rect(50, 20, 500, 40);
+    fill(200, 204, 0);
+
+    circle(40, 40, 60);
+    fill(200, 204, 0);
+
+    circle(560, 420, 60);
+    fill(200, 204, 0);
+
+    circle(40, 420, 60);
+    fill(200, 204, 0);
+
+    circle(560, 40, 60);
+    fill(255, 204, 0);
+
+    image(video,150,140,320,240);
+}
+function take_snapshot(){
+    save('delete_me_later.png');
+}
